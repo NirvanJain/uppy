@@ -19,7 +19,7 @@
     "url": "git+https://github.com/transloadit/uppy.git"
   },
   "scripts": {
-    "build": "ng-packagr -c tsconfig.lib.prod.json && node scripts/collect-dist.mjs",
+    "build": "node init && ng-packagr -c tsconfig.lib.prod.json && node scripts/collect-dist.mjs",
     "test": "vitest run --silent='passed-only'"
   },
   "main": "./fesm2022/uppy-angular.mjs",

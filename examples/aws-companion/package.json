@@ -27,9 +27,9 @@
     "node": ">=16.15.0"
   },
   "scripts": {
-    "dev": "vite",
-    "start": "npm-run-all --parallel start:client start:server",
-    "start:client": "vite",
-    "start:server": "node server.ts"
+    "dev": "node init && vite",
+    "start": "node init && npm-run-all --parallel start:client start:server",
+    "start:client": "node init && vite",
+    "start:server": "node init && node server.ts"
   }
 }

@@ -104,10 +104,10 @@
     "CHANGELOG.md"
   ],
   "scripts": {
-    "build": "tsc --build tsconfig.build.json",
+    "build": "node init && tsc --build tsconfig.build.json",
     "deploy": "kubectl apply -f infra/kube/companion-kube.yml",
-    "start": "node ./dist/standalone/start-server.js",
-    "start:dev": "bash start-dev",
+    "start": "node init && node ./dist/standalone/start-server.js",
+    "start:dev": "node init && bash start-dev",
     "typecheck": "tsc --build",
     "check": "yarn typecheck && yarn test",
     "test": "vitest run --silent='passed-only'"

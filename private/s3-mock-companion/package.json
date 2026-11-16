@@ -8,7 +8,7 @@
     ".": "./lib/index.js"
   },
   "scripts": {
-    "build": "tsc --build tsconfig.build.json",
+    "build": "node init && tsc --build tsconfig.build.json",
     "typecheck": "tsc --build"
   },
   "dependencies": {

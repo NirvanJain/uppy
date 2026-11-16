@@ -7,8 +7,8 @@
     "*.css"
   ],
   "scripts": {
-    "build": "tsc --build tsconfig.build.json",
-    "build:css": "mkdir -p dist && cp ../components/dist/styles.css dist/styles.css && cp ../components/dist/image-editor.css dist/image-editor.css && cp ../components/dist/image-editor.css.map dist/image-editor.css.map",
+    "build": "node init && tsc --build tsconfig.build.json",
+    "build:css": "node init && mkdir -p dist && cp ../components/dist/styles.css dist/styles.css && cp ../components/dist/image-editor.css dist/image-editor.css && cp ../components/dist/image-editor.css.map dist/image-editor.css.map",
     "typecheck": "tsc --build"
   },
   "files": [

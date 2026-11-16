@@ -18,8 +18,8 @@
   },
   "private": true,
   "scripts": {
-    "start": "run-p start:server start:client",
-    "start:client": "vite",
-    "start:server": "node server.ts"
+    "start": "node init && run-p start:server start:client",
+    "start:client": "node init && vite",
+    "start:server": "node init && node server.ts"
   }
 }

@@ -15,6 +15,6 @@
   "scripts": {
     "client": "vite --port 3000 client",
     "server": "node ./server/index.ts",
-    "start": "yarn run server & yarn run client"
+    "start": "node init && yarn run server & yarn run client"
   }
 }

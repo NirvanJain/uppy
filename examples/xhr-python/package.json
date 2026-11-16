@@ -15,8 +15,8 @@
   "private": true,
   "scripts": {
     "installPythonDeps": "python3 -m pip install -r requirements.txt",
-    "start": "npm-run-all --parallel start:server start:client",
-    "start:client": "vite",
-    "start:server": "mkdir -p uploads && python3 server.py"
+    "start": "node init && npm-run-all --parallel start:server start:client",
+    "start:client": "node init && vite",
+    "start:server": "node init && mkdir -p uploads && python3 server.py"
   }
 }

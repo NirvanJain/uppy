@@ -14,8 +14,8 @@
   },
   "private": true,
   "scripts": {
-    "start": "npm-run-all --parallel start:server start:client",
-    "start:client": "vite",
-    "start:server": "mkdir -p uploads && php -S 0.0.0.0:3020 server.php"
+    "start": "node init && npm-run-all --parallel start:server start:client",
+    "start:client": "node init && vite",
+    "start:server": "node init && mkdir -p uploads && php -S 0.0.0.0:3020 server.php"
   }
 }

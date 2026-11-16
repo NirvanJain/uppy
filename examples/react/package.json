@@ -3,9 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "tsc && vite build",
+    "build": "node init && tsc && vite build",
     "test": "vitest run",
-    "dev": "vite",
+    "dev": "node init && vite",
     "serve": "vite preview"
   },
   "dependencies": {

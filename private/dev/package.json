@@ -10,8 +10,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --clearScreen false",
-    "build": "vite build",
+    "dev": "node init && vite --clearScreen false",
+    "build": "node init && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --build"
   }

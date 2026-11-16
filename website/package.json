@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "docusaurus build",
+    "build": "node init && docusaurus build",
     "clear": "docusaurus clear",
     "deploy": "docusaurus deploy",
-    "dev": "docusaurus start",
+    "dev": "node init && docusaurus start",
     "serve": "docusaurus serve",
     "test": "node --test test/*.test.mjs",
     "swizzle": "docusaurus swizzle",

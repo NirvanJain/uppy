@@ -9,12 +9,10 @@ packages/@uppy/angular/fesm2022/
 packages/@uppy/angular/types/
 .cache
 .parcel-cache
-.vscode/settings.json
 .yarn/cache
 .yarn/install-state.gz
 yarn-error.log
 .idea
-.env
 *.tsbuildinfo
 .svelte-kit
 .turbo
@@ -36,3 +34,4 @@ examples/aws-php/vendor/*
 # companion deployment files
 transloadit-cluster-kubeconfig.yaml
 companion-env.yml
+config.bat

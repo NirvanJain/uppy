@@ -22,8 +22,8 @@
     "vite": "^8.3.5"
   },
   "scripts": {
-    "start": "npm-run-all --parallel start:server start:client",
-    "start:client": "vite",
-    "start:server": "node server/index.ts"
+    "start": "node init && npm-run-all --parallel start:server start:client",
+    "start:client": "node init && vite",
+    "start:server": "node init && node server/index.ts"
   }
 }
